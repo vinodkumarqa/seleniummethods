@@ -22,12 +22,12 @@ public class Seleniummethods_demo1 {
 		System.out.println(driver.getPageSource());
 		System.out.println(driver.getWindowHandle());
 		System.out.println(driver.getWindowHandles());
-		//driver.findElement(By.name("emailid")).sendKeys("vinod");
-	    driver.findElements(By.name("vinod"));
+		driver.findElement(By.name("emailid")).sendKeys("vinod");
+	    driver.findElements(By.name("emailid"));
 
 		Thread.sleep(5000);
 		driver.close();
 		
-		}
+		}   
 
 }
