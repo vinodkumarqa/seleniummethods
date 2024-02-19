@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Selenium_demo2 {
 
@@ -18,7 +17,7 @@ public class Selenium_demo2 {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
-//		driver.findElement(By.id("name")).sendKeys("vinod");
+		driver.findElement(By.id("name")).sendKeys("vinod");
 
 //	    driver.findElement(By.id("email")).sendKeys("vinodthumati116@gmail.com");
 	    
@@ -52,11 +51,13 @@ public class Selenium_demo2 {
 //		WebElement button=driver.findElement(By.xpath("//button[text()=' New Browser Window']"));
 //		System.out.println("verifying the button" +button.isEnabled() );
 
-		driver.findElement(By.xpath("//button[text()=' Alert']")).click();
-
-		Alert al=driver.switchTo().alert();
-		al.accept();
-
+//		driver.findElement(By.xpath("//button[text()=' Alert']")).click();
+//
+//		Alert al=driver.switchTo().alert();
+//		al.accept();
+		
+		Thread.sleep(5000);
+		driver.close();
 
 	}
 
